@@ -44,6 +44,7 @@ $(document).ready(function () {
         }
     });
 
+
     $('.menu-icon').click(function () {
         $('.nav-menu').addClass('active');
     })
@@ -70,4 +71,37 @@ $(document).ready(function () {
     $('.select .overlay').click(function () {
         $('.select').find('.body').removeClass('active');
     });
+
+    let startOwl = 0;
+    $('.owl-one .item').click(function () {
+        startOwl = parseInt($(this).data('target')) - 1;
+        $('.items-popup').addClass('active');
+        console.log(startOwl)
+        // $($(this).data('target')).parents('.owl-item').siblings().removeClass('active');
+
+        $('.owl-three').owlCarousel({
+            loop: true,
+            responsiveClass: true,
+            nav: true,
+            startPosition: startOwl,
+            navText: ['<span class="mdi mdi-chev ron-left"></span>', '<span class="mdi mdi-chevron-right"></span>'],
+            responsive: {
+                0: {
+                    items: 1,
+                    dots: false,
+                    nav: true
+                },
+                768: {
+                    items: 1,
+                    loop: false,
+                    dots: false
+                }
+            }
+        });
+    });
+    $('.popup-close-icon').click(function () {
+        $('.items-popup').removeClass('active');
+        $('.owl-item').removeClass('active');
+        startOwl=0;
+    })
 })

@@ -27,6 +27,19 @@
       .mdi {
         font-size: 24px;
         color: #fff;
+        transition: all .3s;
+        &.mdi-facebook:hover {
+          color: #1777f2;
+        }
+        &.mdi-instagram:hover {
+          color: #9a55c3;
+        }
+        &.mdi-twitter:hover {
+          color: #00aced;
+        }
+        &.mdi-linkedin:hover {
+          color: #0074b3;
+        }
       }
     }
   }

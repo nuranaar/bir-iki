@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <header id='head'>
-        <nav class="d-flex align-items-center pr-4 pl-5 pr-xs-1 pl-xs-2">
-            <div class="container w-100 d-flex justify-content-between align-items-center">
+    <header id='main-head'>
+        <nav class="d-flex align-items-center flex-wrap pr-4 pl-5 pl-xs-0 pt-xs-3 ">
+            <div class="container w-100 d-flex justify-content-between align-items-center pb-xs-3">
                 <div class="logo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="175" height="50" viewBox="0 0 175 50">
                         <g fill='#000' fill-rule="evenodd">
@@ -36,6 +36,13 @@
                         </g>
                     </svg>
                 </div>
+            </div>
+            <div class="mobile-nav w-100">
+                <ul>
+                    <li class="mobile-nav-item"><a href="#"> ÇATDIRILMA</a></li>
+                    <li class="mobile-nav-item"><a href="#"> MENYU</a></li>
+                    <li class="mobile-nav-item"><a href="#"> RESTORANLAR</a></li>
+                </ul>
             </div>
             <div class="nav-menu">
                 <div class="container pt-6 pt-xs-2 d-flex justify-content-between align-items-center">
@@ -118,42 +125,108 @@
                         <div id="items">
                             <div
                                 class="owl-one owl-carousel owl-theme items-list d-flex justify-content-arround align-items-center">
-                                <div class="item d-flex align-items-center">
+                                <div data-target='1' class="item d-flex align-items-center">
                                     <img src="assets/img/menu1.png" alt="">
                                     <div class="overlay">
                                         <p class="title">Bir İki Dönər
                                             Çörəkdə (Ət)</p>
                                     </div>
                                 </div>
-                                <div class="item d-flex align-items-center">
+                                <div data-target='2' class="item d-flex align-items-center">
                                     <img src="assets/img/menu1.png" alt="">
                                     <div class="overlay">
                                         <p class="title">Bir İki Dönər
                                             Çörəkdə (Ət)</p>
                                     </div>
                                 </div>
-                                <div class="item d-flex align-items-center">
+                                <div data-target='3' class="item d-flex align-items-center">
                                     <img src="assets/img/menu1.png" alt="">
                                     <div class="overlay">
                                         <p class="title">Bir İki Dönər
                                             Çörəkdə (Ət)</p>
                                     </div>
                                 </div>
-                                <div class="item d-flex align-items-center">
+                                <div data-target='4' class="item d-flex align-items-center">
                                     <img src="assets/img/menu1.png" alt="">
                                     <div class="overlay">
                                         <p class="title">Bir İki Dönər
                                             Çörəkdə (Ət)</p>
                                     </div>
                                 </div>
-                                <div class="item d-flex align-items-center">
+                                <div data-target='5' class="item d-flex align-items-center">
                                     <img src="assets/img/menu1.png" alt="">
                                     <div class="overlay">
                                         <p class="title">Bir İki Dönər
                                             Çörəkdə (Ət)</p>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="items-popup  d-flex justify-content-center align-items-center">
 
+                                <div class="col-4 col-xs-10">
+                                    <div class="popup-close-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22">
+                                                <g fill="#FFF" fill-rule="nonzero">
+                                                    <path d="M22.339 2.585l-18.97 18.97L.823 19.01 19.793.04z" />
+                                                    <path d="M3.368.04l18.97 18.97-2.545 2.546L.823 2.586z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    <div class="owl-three owl-carousel owl-theme items-list w-100">
+                                      
+                                                  <div id='menu1' class="item d-flex align-items-center">
+                                            <img src="assets/img/menu1.png" alt="">
+                                            <div class="overlay">
+                                                <p class="title">Bir İki Dönər
+                                                    Çörəkdə (Ət)</p>
+                                                <p class="info">Ət, xiyar turşusu, kartof fri, gizli tərkibli şaurma
+                                                    sousu</p>
+                                                <p class="price">4.40 AZN</p>
+                                            </div>
+                                        </div>
+                                        <div id='menu2' class="item d-flex align-items-center">
+                                            <img src="assets/img/menu1.png" alt="">
+                                            <div class="overlay">
+                                                <p class="title">Bir İki Dönər
+                                                    Çörəkdə (Ət)</p>
+                                                <p class="info">Ət, xiyar turşusu, kartof fri, gizli tərkibli şaurma
+                                                    sousu</p>
+                                                <p class="price">4.40 AZN</p>
+                                            </div>
+                                        </div>
+                                        <div id='menu3' class="item d-flex align-items-center">
+                                            <img src="assets/img/menu1.png" alt="">
+                                            <div class="overlay">
+                                                <p class="title">Bir İki Dönər
+                                                    Çörəkdə (Ət)</p>
+                                                <p class="info">Ət, xiyar turşusu, kartof fri, gizli tərkibli şaurma
+                                                    sousu</p>
+                                                <p class="price">4.40 AZN</p>
+                                            </div>
+                                        </div>
+                                        <div id='menu4' class="item d-flex align-items-center">
+                                            <img src="assets/img/menu1.png" alt="">
+                                            <div class="overlay">
+                                                <p class="title">Bir İki Dönər
+                                                    Çörəkdə (Ət)</p>
+                                                <p class="info">Ət, xiyar turşusu, kartof fri, gizli tərkibli şaurma
+                                                    sousu</p>
+                                                <p class="price">4.40 AZN</p>
+                                            </div>
+                                        </div>
+                                        <div id='menu5' class="item d-flex align-items-center">
+                                            <img src="assets/img/menu1.png" alt="">
+                                            <div class="overlay">
+                                                <p class="title">Bir İki Dönər
+                                                    Çörəkdə (Ət)</p>
+                                                <p class="info">Ət, xiyar turşusu, kartof fri, gizli tərkibli şaurma
+                                                    sousu</p>
+                                                <p class="price">4.40 AZN</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="w-100 text-center">
@@ -177,10 +250,11 @@
                         <div id="items">
                             <div
                                 class="owl-two owl-carousel owl-theme items-list d-flex justify-content-arround align-items-center">
+                              
                                 <div class="item card">
                                     <div class="img"><img src="./assets/img/restaurant1.png" alt=""></div>
                                     <div class="card-body">
-                                        <div class="title">BİR-İKİ Döner Shop</div>
+                                        <div class="title"><a href="#"> BİR-İKİ Döner Shop</a></div>
                                         <div class="info">
                                             <p class="address">27 Yusif Mammadaliyev St, Baku 1005</p>
                                             <p class="phone">+995 (12) 444 00 44</p>
@@ -190,7 +264,7 @@
                                 <div class="item card">
                                     <div class="img"><img src="./assets/img/restaurant1.png" alt=""></div>
                                     <div class="card-body">
-                                        <div class="title">BİR-İKİ Döner Shop</div>
+                                        <div class="title"><a href="#"> BİR-İKİ Döner Shop</a></div>
                                         <div class="info">
                                             <p class="address">27 Yusif Mammadaliyev St, Baku 1005</p>
                                             <p class="phone">+995 (12) 444 00 44</p>
@@ -200,7 +274,7 @@
                                 <div class="item card">
                                     <div class="img"><img src="./assets/img/restaurant1.png" alt=""></div>
                                     <div class="card-body">
-                                        <div class="title">BİR-İKİ Döner Shop</div>
+                                        <div class="title"><a href="#"> BİR-İKİ Döner Shop</a></div>
                                         <div class="info">
                                             <p class="address">27 Yusif Mammadaliyev St, Baku 1005</p>
                                             <p class="phone">+995 (12) 444 00 44</p>
@@ -210,7 +284,7 @@
                                 <div class="item card">
                                     <div class="img"><img src="./assets/img/restaurant1.png" alt=""></div>
                                     <div class="card-body">
-                                        <div class="title">BİR-İKİ Döner Shop</div>
+                                        <div class="title"><a href="#"> BİR-İKİ Döner Shop</a></div>
                                         <div class="info">
                                             <p class="address">27 Yusif Mammadaliyev St, Baku 1005</p>
                                             <p class="phone">+995 (12) 444 00 44</p>
@@ -220,7 +294,7 @@
                                 <div class="item card">
                                     <div class="img"><img src="./assets/img/restaurant1.png" alt=""></div>
                                     <div class="card-body">
-                                        <div class="title">BİR-İKİ Döner Shop</div>
+                                        <div class="title"><a href="#"> BİR-İKİ Döner Shop</a></div>
                                         <div class="info">
                                             <p class="address">27 Yusif Mammadaliyev St, Baku 1005</p>
                                             <p class="phone">+995 (12) 444 00 44</p>
