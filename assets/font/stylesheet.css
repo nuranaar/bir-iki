@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'MK Text Cond Pro';
+    src: url('MKTextCondPro.woff2') format('woff2'),
+        url('MKTextCondPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MK Text Cond Pro';
+    src: url('MKTextCondProBoldItalic.woff2') format('woff2'),
+        url('MKTextCondProBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MK Text Cond Pro';
+    src: url('MKTextCondProItalic.woff2') format('woff2'),
+        url('MKTextCondProItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MK Text Cond Pro';
+    src: url('MKTextCondProBold.woff2') format('woff2'),
+        url('MKTextCondProBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

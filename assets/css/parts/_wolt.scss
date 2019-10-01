@@ -1,0 +1,14 @@
+#for-wolt {
+  background-image: url("../img/for-wolt.png");
+  height: 39vw;
+  background-size: 100% 100%;
+  .section-body {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    .title {
+      color: #fff;
+      font-size: 5vw;
+      padding: 4vw;
+    }
+  }
+}

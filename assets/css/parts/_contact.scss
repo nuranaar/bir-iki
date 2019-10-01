@@ -1,0 +1,133 @@
+#head {
+  @extend #main-head;
+  background-image: none;
+  height: fit-content;
+  .logo,
+  .menu-icon {
+    svg {
+      g {
+        fill: #000;
+      }
+    }
+  }
+}
+#header {
+  @extend #for-elan;
+  background-color: hsla(0, 0%, 0%, 0.653);
+}
+#form {
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+  .input-group {
+    width: 100%;
+    label {
+      width: 100%;
+      font-size: 24px;
+    }
+    input,
+    textarea {
+      margin: 8px 0 32px;
+      width: 96%;
+      resize: none;
+      border: solid 0.5px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      padding: 8px 10px;
+      font-size: 24px;
+    }
+  }
+  .btn {
+    padding: 2% 2.5%;
+  }
+  .select {
+    margin: 8px 0 32px;
+    width: 15%;
+    margin-right: 8px;
+    position: relative;
+    .top {
+      border: solid 1px rgba(0, 0, 0, 0.5);
+      padding: 9.5px 10px;
+      border-radius: 5px;
+      font-size: 24px;
+      color: #000;
+      cursor: pointer;
+      .icon {
+        i {
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+    .body {
+      display: none;
+      &.active {
+        display: block;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      ul {
+        box-sizing: border-box;
+        width: 100%;
+        position: absolute;
+        background-color: #fff;
+        top: 40px;
+        border: 1px solid;
+        border-top: 0;
+        border-radius: 0 0 8px 8px;
+        padding: 8px;
+        max-height: 140px;
+        overflow-y: auto;
+        z-index: 3;
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 6px lighten($color: rgba(0, 0, 0, 0.2), $amount: 60%);
+          border-radius: 2px;
+          background-color: lighten($color: rgba(0, 0, 0, 0.2), $amount: 70%);
+        }
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+          border-radius: 2px;
+          box-shadow: inset 0 0 6px lighten($color: rgba(0, 0, 0, 0.2), $amount: 40%);
+          background-color: lighten($color: rgba(0, 0, 0, 0.2), $amount: 60%);
+        }
+        li {
+          padding: 8px;
+          margin: 2px 0;
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  #form {
+    .input-group {
+      label {
+        font-size: 18px;
+      }
+      input,
+      textarea {
+        font-size: 18px;
+        width: 92%;
+      }
+    }
+    .select {
+      width: 20%;
+      .top {
+        font-size: 18px;
+      }
+      .body {
+        ul {
+          li {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

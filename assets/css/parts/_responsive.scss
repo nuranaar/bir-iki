@@ -1,0 +1,76 @@
+@media screen and (max-width: 575px) {
+  nav {
+    .nav-menu {
+      ul {
+        .nav-item {
+          font-size: 20px;
+          padding: 8px;
+          &::after {
+            bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+  #menu .category ul .category-list {
+    font-size: 14px;
+  }
+  .card .card-body .title {
+    font-size: 22px;
+  }
+  .card .card-body .info {
+    font-size: 18px;
+  }
+  .services .service .title {
+    font-size: 22px;
+  }
+  .services .service .info {
+    font-size: 18px;
+  }
+  #menu .section-title,
+  #restaurant .section-title,
+  #why-we .section-title {
+    font-size: 8vw;
+  }
+  #for-wolt .section-body .title,
+  #for-elan .section-body .title {
+    font-size: 8vw;
+  }
+  #menu #items .items-list .item,
+  #restaurant #items .items-list .item,
+  #why-we #items .items-list .item {
+    width: 90%;
+  }
+  .footer-gallery ul li {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    &:nth-child(even) {
+      display: none;
+    }
+  }
+  .footer {
+    .social-media {
+      li {
+        .mdi {
+          font-size: 18px;
+        }
+      }
+    }
+    .logo svg {
+      width: 40%;
+      margin: auto;
+    }
+  }
+  .btn {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+  #main-head .body .info-btn {
+      font-size: 7px;
+      margin-top: 5vw;
+  }
+  #main-head .body .info-btn svg {
+    width: 8px;
+    margin-top: 5px;
+  }
+}

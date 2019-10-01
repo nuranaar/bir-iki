@@ -1,0 +1,20 @@
+* {
+  font-family: "MK Text Cond Pro" !important;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-color: $btn_color;
+  color: #fff;
+  border: 1px solid $btn_color;
+  font-size: 1.8vw;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 1% 2.5%;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $btn_hover;
+    border-color: $btn_hover;
+  }
+}
