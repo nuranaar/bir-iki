@@ -108,26 +108,32 @@
   #form {
     .input-group {
       label {
-        font-size: 18px;
+        font-size: 16px;
       }
       input,
       textarea {
-        font-size: 18px;
-        width: 92%;
+        font-size: 16px;
+        width: 93%;
+        margin: 8px 0 16px;
       }
     }
     .select {
-      width: 20%;
+      width: fit-content;
+      margin: 8px 4px 16px 0;
       .top {
-        font-size: 18px;
+        font-size: 16px;
+        padding-right: 5px;
       }
       .body {
         ul {
           li {
-            font-size: 18px;
+            font-size: 16px;
           }
         }
       }
+    }
+    .btn {
+      padding: 3% 2.5%;
     }
   }
 }

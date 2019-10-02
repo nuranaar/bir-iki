@@ -18,6 +18,7 @@
   padding: 2%;
   .contact {
     color: #fff;
+    font-size: 2vw;
   }
   .social-media {
     display: flex;
@@ -27,7 +28,7 @@
       .mdi {
         font-size: 24px;
         color: #fff;
-        transition: all .3s;
+        transition: all 0.3s;
         &.mdi-facebook:hover {
           color: #1777f2;
         }

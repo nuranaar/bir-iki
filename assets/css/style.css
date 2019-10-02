@@ -58,7 +58,7 @@ a {
 #main-head .body .title, #head .body .title {
   color: #fff;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-  font-size: 5vw;
+  font-size: 6vw;
   padding: 4vw;
 }
 
@@ -127,7 +127,7 @@ nav .nav-menu.active {
 
 nav .nav-menu ul .nav-item {
   cursor: pointer;
-  font-size: 40px;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 1;
   text-align: right;
@@ -160,6 +160,16 @@ nav .nav-menu ul .nav-item.active::after {
   #main-head, #head {
     margin-top: 90px;
   }
+  #main-head .body, #head .body {
+    padding: 56px;
+  }
+  #main-head .body .title, #head .body .title {
+    padding: 0 0 16px;
+    font-size: 28px;
+  }
+  #main-head .body .info-btn, #head .body .info-btn {
+    display: none;
+  }
   nav {
     background-color: #fff;
     position: fixed;
@@ -174,6 +184,16 @@ nav .nav-menu ul .nav-item.active::after {
   nav .logo svg g,
   nav .menu-icon svg g {
     fill: #000;
+  }
+  nav .logo {
+    width: 90px;
+  }
+  nav .menu-close-icon {
+    padding: 13px 4px;
+  }
+  nav .menu-icon,
+  nav .menu-close-icon {
+    width: 22px;
   }
   nav .nav-menu .logo svg g {
     fill: #000000 !important;
@@ -211,7 +231,7 @@ nav .nav-menu ul .nav-item.active::after {
 }
 
 #menu .section-title, #restaurant .section-title, #why-we .section-title {
-  font-size: 4vw;
+  font-size: 48px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -233,7 +253,7 @@ nav .nav-menu ul .nav-item.active::after {
 #menu .category ul .category-list, #restaurant .category ul .category-list, #why-we .category ul .category-list {
   margin-right: 5vw;
   display: inline;
-  font-size: 2.5vw;
+  font-size: 32px;
   color: #000000;
 }
 
@@ -314,7 +334,7 @@ nav .nav-menu ul .nav-item.active::after {
 #menu #items .items-list .item .overlay .title, #restaurant #items .items-list .item .overlay .title, #why-we #items .items-list .item .overlay .title {
   position: absolute;
   bottom: 0;
-  padding: 5% 15%;
+  padding: 7% 15%;
 }
 
 #menu #items .items-popup, #restaurant #items .items-popup, #why-we #items .items-popup {
@@ -363,7 +383,7 @@ nav .nav-menu ul .nav-item.active::after {
   padding-top: 20%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 50%;
+  height: 45%;
 }
 
 #menu #items .items-popup .items-list .item .overlay .title, #restaurant #items .items-popup .items-list .item .overlay .title, #why-we #items .items-popup .items-list .item .overlay .title {
@@ -403,7 +423,8 @@ nav .nav-menu ul .nav-item.active::after {
 
 #for-wolt .section-body .title, #for-elan .section-body .title, #header .section-body .title {
   color: #fff;
-  font-size: 5vw;
+  font-size: 6vw;
+  text-align: center;
   padding: 4vw;
 }
 
@@ -439,12 +460,12 @@ nav .nav-menu ul .nav-item.active::after {
 }
 
 #why-we .section-title {
+  padding: 0;
   padding-top: 5vw;
   padding-bottom: 3vw;
 }
 
 #why-we .info {
-  font-size: 16px;
   line-height: 1.25;
   color: #000000;
 }
@@ -455,6 +476,7 @@ nav .nav-menu ul .nav-item.active::after {
 
 #why-we .info p {
   padding: 4px 0;
+  font-size: 24px;
 }
 
 .services {
@@ -462,7 +484,7 @@ nav .nav-menu ul .nav-item.active::after {
 }
 
 .services .service {
-  padding: 2.5% 5%;
+  padding: 2.5% 7%;
 }
 
 .services .service .title {
@@ -514,6 +536,7 @@ nav .nav-menu ul .nav-item.active::after {
 
 .footer .contact {
   color: #fff;
+  font-size: 2vw;
 }
 
 .footer .social-media {
@@ -532,8 +555,8 @@ nav .nav-menu ul .nav-item.active::after {
 .footer .social-media li .mdi {
   font-size: 24px;
   color: #fff;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .footer .social-media li .mdi.mdi-facebook:hover {
@@ -554,43 +577,68 @@ nav .nav-menu ul .nav-item.active::after {
 
 @media screen and (max-width: 575px) {
   nav .nav-menu ul .nav-item {
-    font-size: 20px;
+    font-size: 24px;
     padding: 8px;
   }
   nav .nav-menu ul .nav-item::after {
     bottom: 2px;
   }
   #menu .category ul .category-list, #restaurant .category ul .category-list, #why-we .category ul .category-list {
-    font-size: 14px;
+    font-size: 16px;
   }
   .card .card-body .title {
     font-size: 22px;
   }
   .card .card-body .info {
-    font-size: 18px;
+    font-size: 16px;
   }
   .services .service .title {
-    font-size: 22px;
+    font-size: 20px;
   }
   .services .service .info {
     font-size: 18px;
+  }
+  .services .service .icon {
+    width: 100%;
+    height: 70px;
   }
   #menu .section-title, #restaurant .section-title, #why-we .section-title,
   #restaurant .section-title,
   #why-we .section-title,
   #why-we .section-title {
-    font-size: 8vw;
+    font-size: 24px;
+  }
+  #menu .category, #restaurant .category, #why-we .category,
+  #restaurant .category,
+  #why-we .category,
+  #why-we .category {
+    padding-top: 12px;
   }
   #for-wolt .section-body .title, #for-elan .section-body .title, #header .section-body .title,
   #for-elan .section-body .title,
   #header .section-body .title {
-    font-size: 8vw;
+    font-size: 28px;
+  }
+  #menu #items, #restaurant #items, #why-we #items,
+  #restaurant #items,
+  #why-we #items,
+  #why-we #items {
+    padding: 16px 2vw;
   }
   #menu #items .items-list .item, #restaurant #items .items-list .item, #why-we #items .items-list .item,
   #restaurant #items .items-list .item,
   #why-we #items .items-list .item,
   #why-we #items .items-list .item {
     width: 90%;
+  }
+  #why-we .info {
+    padding: 4px 6px;
+  }
+  #why-we .info p {
+    font-size: 16px;
+  }
+  .footer-gallery ul {
+    margin-bottom: 24px;
   }
   .footer-gallery ul li {
     width: calc(100vw / 3);
@@ -599,16 +647,29 @@ nav .nav-menu ul .nav-item.active::after {
   .footer-gallery ul li:nth-child(even) {
     display: none;
   }
+  .footer .contact {
+    padding: 20px 0 30px;
+    font-size: 20px;
+  }
+  .footer .contact span {
+    display: block;
+  }
+  .footer .social-media {
+    padding-bottom: 40px;
+  }
   .footer .social-media li .mdi {
     font-size: 18px;
+  }
+  .footer .logo {
+    padding-top: 20px;
   }
   .footer .logo svg {
     width: 40%;
     margin: auto;
   }
   .btn {
-    padding: 5px 15px;
-    font-size: 12px;
+    padding: 8px 20px;
+    font-size: 20px;
   }
   #main-head .body .info-btn, #head .body .info-btn {
     font-size: 7px;
@@ -617,6 +678,22 @@ nav .nav-menu ul .nav-item.active::after {
   #main-head .body .info-btn svg, #head .body .info-btn svg {
     width: 8px;
     margin-top: 5px;
+  }
+  #for-wolt, #for-elan, #header, #for-elan, #header,
+  #header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  #for-wolt .section-body, #for-elan .section-body, #header .section-body,
+  #for-elan .section-body,
+  #header .section-body,
+  #header .section-body {
+    padding: 77px 0;
+  }
+  #menu #items .items-popup .items-list .item .overlay, #restaurant #items .items-popup .items-list .item .overlay, #why-we #items .items-popup .items-list .item .overlay {
+    height: 60%;
   }
 }
 
@@ -744,21 +821,29 @@ nav .nav-menu ul .nav-item.active::after {
 
 @media screen and (max-width: 575px) {
   #form .input-group label {
-    font-size: 18px;
+    font-size: 16px;
   }
   #form .input-group input,
   #form .input-group textarea {
-    font-size: 18px;
-    width: 92%;
+    font-size: 16px;
+    width: 93%;
+    margin: 8px 0 16px;
   }
   #form .select {
-    width: 20%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 8px 4px 16px 0;
   }
   #form .select .top {
-    font-size: 18px;
+    font-size: 16px;
+    padding-right: 5px;
   }
   #form .select .body ul li {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  #form .btn {
+    padding: 3% 2.5%;
   }
 }
 
@@ -774,12 +859,13 @@ nav .nav-menu ul .nav-item.active::after {
 }
 
 #vacancy .vacancy-card .title {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
+  padding-bottom: 8px;
 }
 
 #vacancy .vacancy-card .info {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 #vacancy .vacancy-card .info p {
@@ -788,13 +874,14 @@ nav .nav-menu ul .nav-item.active::after {
 
 @media screen and (max-width: 575px) {
   #vacancy .vacancy-card {
-    padding: 20px;
+    padding: 16px;
+    margin: 8px 6px;
   }
   #vacancy .vacancy-card .title {
-    font-size: 22px;
+    font-size: 20px;
   }
   #vacancy .vacancy-card .info {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

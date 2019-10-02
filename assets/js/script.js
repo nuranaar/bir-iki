@@ -84,7 +84,7 @@ $(document).ready(function () {
             responsiveClass: true,
             nav: true,
             startPosition: startOwl,
-            navText: ['<span class="mdi mdi-chev ron-left"></span>', '<span class="mdi mdi-chevron-right"></span>'],
+            navText: ['<span class="mdi mdi-chevron-left"></span>', '<span class="mdi mdi-chevron-right"></span>'],
             responsive: {
                 0: {
                     items: 1,

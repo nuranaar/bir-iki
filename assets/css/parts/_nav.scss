@@ -18,7 +18,7 @@
     .title {
       color: #fff;
       text-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-      font-size: 5vw;
+      font-size: 6vw;
       padding: 4vw;
     }
     .info-btn {
@@ -81,7 +81,7 @@ nav {
     ul {
       .nav-item {
         cursor: pointer;
-        font-size: 40px;
+        font-size: 3.7vw;
         font-weight: bold;
         line-height: 1;
         text-align: right;
@@ -112,6 +112,16 @@ nav {
 @media screen and (max-width: 575px) {
   #main-head {
     margin-top: 90px;
+    .body {
+      padding: 56px;
+      .title {
+        padding: 0 0 16px;
+        font-size: 28px;
+      }
+      .info-btn {
+        display: none;
+      }
+    }
   }
   nav {
     background-color: #fff;
@@ -127,6 +137,16 @@ nav {
           fill: #000;
         }
       }
+    }
+    .logo {
+      width: 90px;
+    }
+    .menu-close-icon {
+      padding: 13px 4px;
+    }
+    .menu-icon,
+    .menu-close-icon {
+      width: 22px;
     }
     .nav-menu {
       .logo {

@@ -6,11 +6,12 @@
     margin: 16px;
     padding: 24px;
     .title {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: bold;
+      padding-bottom: 8px;
     }
     .info {
-      font-size: 24px;
+      font-size: 28px;
       p {
         padding: 4px 0;
       }
@@ -18,16 +19,16 @@
   }
 }
 @media screen and (max-width: 575px) {
-    #vacancy {
-        .vacancy-card {
-            padding: 20px;
-          .title {
-            font-size: 22px;
-          }
-          .info {
-            font-size: 18px;
-          }
-        }
+  #vacancy {
+    .vacancy-card {
+      padding: 16px;
+      margin: 8px 6px;
+      .title {
+        font-size: 20px;
       }
-      
+      .info {
+        font-size: 16px;
+      }
+    }
+  }
 }
